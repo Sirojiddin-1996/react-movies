@@ -1,0 +1,59 @@
+.header__nav{
+  padding: 0 20px;
+}
+.content{
+  min-height: calc(100vh - 70px - 64px);
+  text-align: center;
+}
+p{
+  margin: 0;
+}
+
+h1{
+  margin: 0;
+}
+.movies{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+
+}
+
+.search-btn{
+  position: absolute;
+  top: 5px;
+  right: 1px;
+}
+
+.input-color{
+  color:aliceblue;
+}
+
+label:not(:last-child){
+  margin-right: 1.5rem;
+}
+.myApp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app{
+  display: flex;
+  align-items:flex-end;
+  width: 50%;
+}
+.margn{
+  margin: 0;
+}
+.row{
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+   .myApp{
+    flex-direction: column;
+   }
+   .app{
+    width: 100%;
+   }
+}
